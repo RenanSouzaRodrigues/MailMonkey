@@ -63,6 +63,10 @@ class MailMonkey {
         $this->mail->Body = $templateToUse;
     }
 
+    /**
+     * Method to send the prepared email
+     * @return boolean
+     */
     public function send()
     {
         if (!$this->mail->send()) {
@@ -73,6 +77,10 @@ class MailMonkey {
         }
     }
 
+    /**
+     * Return the stored error message
+     * @return $error string Error message
+     */
     public function getError()
     {
         return $this->error;
