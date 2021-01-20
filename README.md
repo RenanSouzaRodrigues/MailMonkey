@@ -14,7 +14,7 @@
 
 To create a new template, you need to create a new HTML file inside the 'Templates' folder. 
 You can create variables inside your template as you like and convert this values into php values using associative array syntax
-To see an example, check out the *How to send HTML files as template*
+To see an example, check out the _How to send HTML files as template_
 
 ### How to send simple emails
 
