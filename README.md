@@ -20,15 +20,21 @@ To see an example, check out the **How to send HTML files as template**
 
 ```
 $mailMonkey = new MailMonkey();
+
 $mailMonkey->prepare('person@email.com', 'John Doe', 'My email subject');
+
 $mailMonkey->setMessage('this is my message');
+
 $mailMonkey->send();
 ```
 
 ### How to send HTML files as templates
 ```
 $mailMonkey = new MailMonkey();
+
 $mailMonkey->prepare('person@email.com', 'John Doe', 'My email subject');
+
 $mailMonkey->sendMessageUsingTemplate('myTemplate', [':var1:' => $var1]);
+
 $mailMonkey->send();
 ```
